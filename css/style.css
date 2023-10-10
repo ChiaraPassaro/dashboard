@@ -12,6 +12,20 @@ html {
   display: none;
 }
 
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+  color: #3bc0c3;
+  cursor: pointer;
+}
+
 .badge {
   padding: 0.2rem 0.4rem;
   border-radius: 0.5rem;
@@ -79,7 +93,6 @@ html {
 .sidebar .sidebar-list .sidebar-list-item a:hover, 
 .sidebar .sidebar-list .sidebar-list-item a:active, 
 .sidebar .sidebar-list .sidebar-list-item a:focus {
-
   color: #3bc0c3;
 }
 
@@ -126,4 +139,32 @@ html {
 .main-container {
   background-color: olivedrab;
 }
+
+.select-button button {
+  align-items: center;
+  gap: 0.3rem;
+}
+
+
+.select-button .select-button-img {
+  width: 20px;
+}
+
+.profile .avatar {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.profile .avatar img{
+  width: 100%;
+}
+
+.list-icon {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
 
