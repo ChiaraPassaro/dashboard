@@ -223,6 +223,7 @@ html {
 .main-container .row {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 1rem;
   padding: 1rem;
 }
@@ -300,13 +301,16 @@ html {
   align-items: center;
   color: #495057;
 }
-.box-header-title {
-  font-size: 1.3rem;
-}
 .box-content {
   max-height: 300px;
   overflow-y: auto;
 }
+.box-footer {
+  display: flex;
+  gap: 1rem;
+  height: 42px;
+}
+
 .chat-row {
   display: flex;
   gap: 1rem;
@@ -360,10 +364,7 @@ html {
   background-color: lightgray;
 }
 
-.box-footer {
-  display: flex;
-  gap: 1rem;
-}
+
 .input-message {
   flex-grow: 1;
   padding: 0.5rem;
@@ -371,3 +372,21 @@ html {
   border-style: solid;
 }
 
+.box-content.box-content-table {
+  max-height: 100%;
+}
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #6C757D;
+}
+.project-table tr {
+  border-bottom: 1px solid lightgray;
+}
+.project-table th {
+  text-align: left;
+}
+.project-table th,
+.project-table td {
+  padding: 0.8rem 0.5rem;
+}
