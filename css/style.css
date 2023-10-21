@@ -19,6 +19,8 @@ html {
   align-items: center;
   background: transparent;
   border: none;
+  color: #495057;
+  text-decoration: none;
 }
 .btn:hover,
 .btn:active,
@@ -26,17 +28,41 @@ html {
   color: #3bc0c3;
   cursor: pointer;
 }
+.btn-badge {
+  position: absolute;
+  /* top: -80%;
+  right: -70%; */
+  bottom: 60%;
+  left: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.1rem; 
+  padding: 0.2rem;
+  aspect-ratio: 1 / 1 ;
+  border-radius: 100%;
+  font-size: 0.6rem;
+  color: white;
+}
+.btn-badge.cyan {
+  background-color: rgb(68, 137, 228);
+
+}
+.btn-badge.pink {
+  background-color: #f24f7c;
+}
 
 .badge {
   padding: 0.2rem 0.4rem;
   border-radius: 0.5rem;
-  background-color: #4489E4;
   color: white;
   font-size: 0.9rem;
+  background-color: #4489E4;
 }
 .badge > span {
   font-size: 0.7rem;
 }
+
 
 .container {
   display: flex;
@@ -123,6 +149,9 @@ html {
   align-items: center;
   gap: 1rem;
 }
+.main-header .menu {
+  font-size: 1.5rem;
+}
 .search-input {
   padding: 0.2rem 0.5rem;
   border-radius: 1rem;
@@ -162,13 +191,18 @@ html {
 .list-icon {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+  margin: 0 1rem;
+}
+.list-icon i {
+  font-size: 1.4rem;
 }
 
 .main-container .row {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  padding: 1rem;
 }
 
 .card {
@@ -176,35 +210,41 @@ html {
   justify-content: space-between;
   width: 25%;
   background-color: rgb(68, 137, 228);
+  border-radius: 0.2rem;
+  color: white;
 }
-
 .card-text {
   width: 80%;
   padding: 1.5rem;
 }
-
+.card-text .card-title {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+.card-text .card-subtitle {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+.card-text .card-content {
+  font-size: 0.8rem;
+}
 .card-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
-  background-color: rgba(184, 200, 221, 0.322);
-  background-color: #b8c8dd52;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 2.5rem;
 }
-
-.btn-badge {
-  position: absolute;
-  /* top: -80%;
-  right: -70%; */
-  bottom: 60%;
-  left: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 1rem; 
-  padding: 0.2rem;
-  aspect-ratio: 1 / 1 ;
-  border-radius: 100%;
-  background-color: rgb(68, 137, 228);
-  font-size: 0.6rem;
+.card.visits {
+  background-color: #F24F7C;
+}
+.card.orders {
+  background-color: rgba#33B0E0;
+}
+.card.users {
+  background-color: #3BC0C3;
+}
+.card.revenue {
+  background-color: #716CB0;
 }

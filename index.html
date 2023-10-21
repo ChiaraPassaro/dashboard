@@ -17,11 +17,15 @@
 
 <body>
   <div class="container">
+
+    <!-- sidebar -->
     <aside class="sidebar">
       <div class="logo">
         <img src="./img/logo-3711f1d8.png" alt="Velonic" width="90%">
       </div>
+
       <div class="sidebar-menu">
+        <!-- menu main -->
         <div class="sidebar-menu-main">
           <h2>Main</h2>
           <ul class="sidebar-list">
@@ -32,6 +36,7 @@
                 <div class="badge">9<span>+</span></div>
               </a>
             </li>
+
             <li class="sidebar-list-item">
               <a href="#">
                 <i class="fa-regular fa-newspaper"></i>
@@ -76,6 +81,8 @@
             </li>
           </ul>
         </div>
+
+        <!-- menu components -->
         <div class="sidebar-menu-components">
           <h2>Components</h2>
           <ul class="sidebar-list">
@@ -88,23 +95,25 @@
             </li>
           </ul>
         </div>
-
       </div>
     </aside>
+    <!-- /sidebar -->
 
+    <!-- main -->
     <main class="main">
+
+      <!-- main header -->
       <header class="main-header">
         <div class="col">
-
-          <i class="fa-solid fa-bars"></i>
+          <a href="#" class="menu btn"><i class="fa-solid fa-bars"></i></a>
           <label class="display-none" for="search">Search</label>
 
           <div class="search-input">
             <input id="search" type="text" placeholder="Search">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-
         </div>
+
         <div class="col">
           <div class="select-language select-button">
             <button class="btn">
@@ -113,30 +122,32 @@
               <i class="fa-solid fa-angle-down"></i>
             </button>
           </div>
+
           <ul class="list-icon">
             <li>
               <button class="btn">
                 <i class="fa-regular fa-envelope"></i>
-                <div class="btn-badge">3</div>
+                <div class="btn-badge cyan">3</div>
               </button>
             </li>
             <li>
               <button class="btn">
-                <i class="fa-regular fa-envelope"></i>
-                <div class="btn-badge">3</div>
+                <i class="fa-regular fa-bell"></i>
+                <div class="btn-badge pink">3</div>
               </button>
             </li>
             <li>
               <button class="btn">
-                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-solid fa-gear"></i>
               </button>
             </li>
             <li>
               <button class="btn">
-                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-regular fa-moon"></i>
               </button>
             </li>
           </ul>
+
           <div class="profile select-button">
             <button class="btn">
               <div class="avatar select-button-img">
@@ -150,27 +161,69 @@
           </div>
         </div>
       </header>
+      <!-- /main header -->
+
+      <!-- main content -->
       <div class="main-content">
         <div class="main-top-bar"></div>
         <div class="main-container">
           <div class="row">
-            <div class="card">
+            <div class="card visits">
               <div class="card-text">
-                <h2>
+                <h2 class="card-title">
                   DAILY VISITS
                 </h2>
-                <h3>8,652</h3>
-                <p>
+                <h3 class="card-subtitle">8,652</h3>
+                <p class="card-content">
                   2.97% Since last month
                 </p>
               </div>
               <div class="card-icon">
-                <i class="fa-solid fa-angle-down"></i>
+                <i class="fa-solid fa-eye"></i>
               </div>
             </div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card revenue">
+              <div class="card-text">
+                <h2 class="card-title">
+                  REVENUE
+                </h2>
+                <h3 class="card-subtitle">8,652</h3>
+                <p class="card-content">
+                  2.97% Since last month
+                </p>
+              </div>
+              <div class="card-icon">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+            <div class="card orders">
+              <div class="card-text">
+                <h2 class="card-title">
+                  ORDERS
+                </h2>
+                <h3 class="card-subtitle">8,652</h3>
+                <p class="card-content">
+                  2.97% Since last month
+                </p>
+              </div>
+              <div class="card-icon">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+            <div class="card users">
+              <div class="card-text">
+                <h2 class="card-title">
+                  USERS
+                </h2>
+                <h3 class="card-subtitle">8,652</h3>
+                <p class="card-content">
+                  2.97% Since last month
+                </p>
+              </div>
+              <div class="card-icon">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
